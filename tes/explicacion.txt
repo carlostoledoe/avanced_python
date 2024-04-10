@@ -1,0 +1,6 @@
+300gr => $3000
+500gr => $5000
+
+Té negro =>             Se recominenda para el desayuno         => 3 minutos
+Té verde =>             Se recominenda para el almuerzo         => 5 minutos
+Insusión de hierbas =>  Se recominenda para el atardecer        => 6 minutos
