@@ -1,25 +1,34 @@
-class Pelota:
-    def __init__(self, color: str, tamaño: int = 5):
-        self.color = color
-        self.tamaño = tamaño
+if __name__ == '__main__':
+    class Pelota:
+        def __init__(self, color: str, tamaño: int = 5):
+            self.color = color
+            self.tamaño = tamaño
 
-    @property # Decorador. 
-    def color_tamaño(self):
-        return f'La pelota {self.color} es de tamaño {self.tamaño}'
+        @property # Decorador. 
+        def color_tamaño(self):
+            return f'La pelota {self.color} es de tamaño {self.tamaño}'
 
-p1 = Pelota('Naranja')
-print(p1.tamaño)
-print(p1.color_tamaño) # Pasa a ser una priedad, no se usa paréntesis
+    p1 = Pelota('Naranja')
+    print(p1.tamaño)
+    print(p1.color_tamaño) # Pasa a ser una priedad, no se usa paréntesis
 
 
 
-# Ahora veremos para qué se usa property
+
+
+
+
+
+
+
+
+
 
 class Termometro:
     def __init__(self, celsius):
-        self.__celsius = celsius
+        self.__celsius = celsius #Atributo privado
 
-    # getter para obtenerlo
+    # getter para obtener el atributo privado
     @property
     def celsius(self):
         if self.__celsius > 100:
@@ -42,3 +51,4 @@ print(t1.celsius) # Por eso no se puede acceder
 #t1.celsius = -300 # para evitar esto
 t1.celsius = 300 # para evitar esto
 print(t1.celsius)
+
