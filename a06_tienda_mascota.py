@@ -9,6 +9,12 @@ class Mascota:
 
     def __str__(self) -> str:
         return f'{self.especie.upper()}: // Precio: ${self.precio} // Cantidad: {self.cantidad}'
+    
+    def __iadd__(self, otro_valor: int):
+    # Sobrescritura de método += 
+        print(self)
+        self.cantidad += otro_valor
+        return self
 
 
 class Tienda:
@@ -58,8 +64,11 @@ if __name__ == '__main__':
     loro = Mascota('Loro', 2000, 5)
     perro = Mascota('Perro', 1000, 5)
 
+    alpaca += 1 # A qué sumo? Puedo modificar el operador +=
+
     # Agrego las mascotas todas juntas
     tienda1.add_mascota(alpaca, tortuga, loro, perro)
+    print(alpaca)
 
     # # Se agregan una a una
     # tienda1.add_mascota('Tortuga Marina', 10000, 10)
