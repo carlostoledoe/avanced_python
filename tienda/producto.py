@@ -1,4 +1,4 @@
-class Producto: # Entidad debil, xq la tienda
+class Producto: 
     def __init__(self, nombre, precio, stock = 0):
         self.nombre = nombre
         self.precio = precio
