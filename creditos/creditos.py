@@ -51,3 +51,5 @@ class CredHipotecario(ACredito):
 
     # Agregar un email
 
+
+membresias = []

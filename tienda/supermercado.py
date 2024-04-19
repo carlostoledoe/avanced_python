@@ -8,10 +8,10 @@ class Supermercado(Tienda):
             else:
                 print(f'{p.nombre}, ${p.precio}, Unidades: {p.stock}')
 
-
-m = Supermercado('Ekono', 1500)
-m.ingresar_producto('Atún', 1300, 300)
-m.ingresar_producto('Papél higénico', 5000, 8)
-print(m.productos)
-m.listar_productos()
+if __name__ == '__name__':
+    m = Supermercado('Ekono', 1500)
+    m.ingresar_producto('Atún', 1300, 300)
+    m.ingresar_producto('Papél higénico', 5000, 8)
+    print(m.productos)
+    m.listar_productos()
 

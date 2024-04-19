@@ -7,5 +7,5 @@ class Producto:
         else:
             self.stock = stock
 
-def __eq__(self, otro_prod): # ==
+def __eq__(self, otro_prod): # sobrescribe ==
     return self.nombre == otro_prod.nombre

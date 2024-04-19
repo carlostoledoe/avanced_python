@@ -3,6 +3,7 @@
 # métodos que deben ser creados por las clases que hereden de la clase abstracta, pero sin
 # implementar la funcionalidad completa. Esto es útil para asegurar que ciertos métodos sean
 # implementados en todas las subclases, manteniendo una estructura coherente y evitando la duplicación de código.
+# No se puede instanciar con una clase abstracta
 
 from abc import ABC, abstractmethod
 
