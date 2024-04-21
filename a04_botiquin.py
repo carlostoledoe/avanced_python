@@ -1,4 +1,4 @@
-from a03_pelota import Termometro
+from a03_termometro import Termometro
 
 class Botiquin:
     def __init__(self):

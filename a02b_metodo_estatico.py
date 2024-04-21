@@ -1,50 +1,3 @@
-# - Clase: Código que define qué contiene y qué hace un objeto de un tipo de dato, el cual
-#          corresponde al nombre de la clase. Es como un plano o modelo para fabricar objetos.
-
-# - Atributos: Contenedor de un valor o de un conjunto de valores, definido dentro de una 
-#          clase que adquiere un tipo de dato según el valor que se le asigne. 
-
-# - Método:  Corresponden a un bloque de código que permite realizar una tarea específica, los que
-#          pueden tener o no un retorno y pueden ser con o sin parámetros. Acciones que puede realizar el objeto.
-
-
-
-
-
-
-
-
-# class Persona:
-#     estado = 'Humano' # Atributo de clase, se puede leer sin una instancia
-#     def __init__(self, nombre, edad) -> None:
-#         self.nombre = nombre # Atributo de instancia, hay que instanciar para accederlos
-#         self.edad = edad
-#         self.pais = 'Chile' # Atributo estático
-#     def caminar(self):
-#         print('Caminando...')
-
-# print(Persona.estado) # Consultado sin instanciar el atributo de clase
-
-# juan = Persona('Juan Carlos', 33) # Instancia u obejto de la clase Persona
-# print(juan.nombre) # Consulta Atributos de Instancia
-# print(juan.edad)
-# print(juan.estado) 
-# juan.caminar() # Ejecutando un método de instancia
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Método estático
 # Aquel que se puede llamar directamente desde la clase sin que se requiera una instancia. 
 # Son como métodos generales. Son como una función, no requieren instancia
@@ -219,17 +172,6 @@
 # monto > 10000 "10PORCIENTO"
 # monto > 20000 "20PORCIENTO"
 
-
-
-
-
-
-
-
-
-
-
-
 # # orden_compra.py
 # class OrdenDeCompra:
 #     def nueva_orden(self):
@@ -254,11 +196,3 @@
 # oc.total_productos = int(input('Ingrese el total de productos: '))
 # oc.asignar_monto(int(input('Ingrese el monto: ')))
 # print(f'El descuento es: {oc.codigo_descuento}')
-
-
-
-
-
-
-
-
