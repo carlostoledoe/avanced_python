@@ -1,5 +1,11 @@
+from ingredientes import proteinas, vegetales, masas
+
 class Pizza:
-    from ingredientes import proteinas, vegetales, masas
+    # Se definen como atributos de clase
+    masas = masas
+    proteinas = proteinas
+    vegetales = vegetales
+    
     def __init__(self, masa, proteina, vegetal_1, vegetal_2, pizza_valida, tamaño = 'Familiar', precio = 10000 ):
         self.masa = masa
         self.proteina = proteina
@@ -32,7 +38,7 @@ class Pizza:
             print('Tipo de vegetal no valido!')
             pizza_valida = False
         
-        vegetal_2 = input('Ingrese tipo de vegetal (aceitunas, tomate, champiñon): ').lower()
+        vegetal_2 = input('Ingrese tipo de vegetal (aceituna, tomate, champiñon): ').lower()
         if not Pizza.esta_presente(vegetal_2, Pizza.vegetales):
             print('Tipo de vegetal no valido!')
             pizza_valida = False

@@ -23,9 +23,9 @@
 class Vehiculo: # def __init__() --> Constructor
     #Atributo de clase
     num_vehiculo = 0 # No pertenece al objeto, pertenece a la clase, parte de
-    #  modelo, motor, rendimiento, automatico ---> atributos de la instancia
     # Constructor
     def __init__(self, modelo, motor, rendimiento, automatico = False): #self representa el vehículo que estamos creando
+    #  modelo, motor, rendimiento, automatico ---> atributos de la instancia
         self.modelo = modelo
         self.motor = motor
         self.rendimiento = rendimiento
