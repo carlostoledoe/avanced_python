@@ -166,3 +166,11 @@
 #     print(f"Tiene un descuento de {m1.descuento * 100}%")
 
 # print(f'El precio final del medicamento es {m1.precio_final}')
+
+
+
+
+
+
+
+
