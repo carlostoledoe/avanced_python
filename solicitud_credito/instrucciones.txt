@@ -1,0 +1,17 @@
+Con los datos ingresados, se debe crear una instancia de solicitud de crédito adecuada. Para
+ello, se debe considerar la siguiente información entregada por la entidad bancaria:
+
+● Los créditos de consumo y los créditos comerciales solo pueden tener montos entre $1.000.000 y
+$5.000.000 inclusive. Los créditos hipotecarios solo pueden tener montos entre $20.000.000 y
+$100.000.000.
+
+● Si se solicita un crédito fuera del rango permitido, se debe forzar el monto solicitado al valor posible más
+cercano. Ejemplo: Si se solicita un crédito de consumo $400.000, se forzará esta cantidad a ser
+$1.000.000.
+
+● Los correos de contacto para las solicitudes de créditos de consumo e hipotecarios solo pueden tener
+terminaciones “.cl” o “.com”. Para el caso de las solicitudes de créditos comerciales, también pueden
+terminar en “.org”, pero no pueden contener los textos “gmail”, “outlook” ni “hotmail”. En todos los casos,
+los correos deben tener 1 símbolo arroba (@).
+
+● Si se ingresa un correo no válido para el tipo de crédito solicitado, se debe forzar a ser un texto vacío.

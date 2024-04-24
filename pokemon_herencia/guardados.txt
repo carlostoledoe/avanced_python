@@ -1,0 +1,4 @@
+{"name": "Jorge", "health": 100, "type": "raro"}
+{"name": "Carlos ", "health": 10000, "type": "normal"}
+{"name": "Jorge", "health": 100, "type": "raro"}
+{"name": "jojo", "health": 100, "type": "normal"}
