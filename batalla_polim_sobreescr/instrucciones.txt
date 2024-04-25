@@ -1,0 +1,22 @@
+Te han solicitado modificar el demo realizado previamente, consistente en la batalla entre un 
+jugador y un monstruo. Te solicitan que, previo al enfrentamiento, el monstruo debe mostrar el diálogo
+“GRAAAWR”.
+
+- Considera que todos los monstruos son “personajes no jugadores”, y que
+todos los “personajes no jugadores” pueden realizar diálogos.
+
+- Los “personajes no jugadores” necesitan un nombre para crearse. Este
+nombre se debe concatenar al principio de cada diálogo, por ejemplo: Bégimo: "GRAAAWR".
+
+- También han solicitado que al morir alguno de los enfrentados, se muestre en pantalla el mensaje 
+“¡Felicidades!, ¡Haz ganado la batalla”, en caso de que el vencedor sea el jugador, y el mensaje
+ “¡Oh no!, haz perdido la batalla :“ en caso de que el vencedor sea el monstruo.
+
+
+ Aspectos técnicos
+En esta etapa, se solicita aplicar encapsulamiento a los atributos, además no se debe permitir
+crear instancias de Monstruo que tengan armas, por lo que se debe sobrescribir el constructor
+de la clase base.
+
+Se hará uso de **kwargs y super() para manejar el llamado a múltiples 
+constructores en el caso de herencia múltiple.
