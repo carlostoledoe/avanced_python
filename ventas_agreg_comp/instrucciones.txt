@@ -1,0 +1,29 @@
+Antes de escribir el código, se debe identificar las clases presentes en el problema,
+y las relaciones entre ellas. En este caso, las clases identificadas son 3:
+
+
+    ● Venta
+    ● DetalleVenta
+    ● DetalleVentaItem
+
+
+Venta y DetalleVenta:
+    ● Venta tiene un DetalleVenta.
+    ● Dado el contexto explicado, un DetalleVenta no puede existir en forma independiente, 
+    sino que siempre se asocia a una Venta específica.
+    ● Por lo tanto, la relación entre estas clases es de composición, siendo la Venta el 
+    compuesto y el DetalleVenta el componente.
+
+Venta y DetalleVentaItem:
+    ● Venta usa un DetalleVentaItem para agregar un ítem a su detalle.
+    ● Para que exista una Venta, no es necesario que posea un DetalleVentaItem; solo lo requiere para 
+    realizar la acción de agregar ítems al detalle.
+    ● Por lo tanto, la relación de estas clases es de colaboración, donde DetalleVentaItem colabora 
+    con Venta para agregar un ítem a su detalle.
+
+DetalleVenta y DetalleVentaItem:
+    ● Venta tiene una lista de DetalleVentaItem.
+    ● El DetalleVentaItem se agrega una vez ya creada la instancia DetalleVenta. Es decir, DetalleVentaItem 
+    existe de forma independiente de DetalleVenta (se crea dentro de Venta).
+    ● Por lo tanto, la relación de estas clases es de agregación, siendo DetalleVenta la clase padre, y 
+    DetalleVentaItem la clase hija.
