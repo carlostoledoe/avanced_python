@@ -123,3 +123,26 @@
 
 
 
+# super()
+# Es una función incorporada en Python que permite acceder a métodos de la clase padre desde
+# una clase hija. Aquí tienes un ejemplo de cómo se puede usar super() para llamar al 
+# método __init__ de una clase padre:
+
+
+class ClasePadre:
+    def __init__(self, valor):
+        self.valor = valor
+        print(f"ClasePadre inicializada con valor {self.valor}")
+
+class ClaseHija(ClasePadre):
+    def __init__(self, valor, mensaje):
+        super().__init__(valor)  # Llama al constructor de ClasePadre
+        self.mensaje = mensaje
+        print(f"ClaseHija inicializada con mensaje '{self.mensaje}'")
+
+# Crear una instancia de ClaseHija
+instancia = ClaseHija(10, "Hola Mundo")
+
+# En este ejemplo, ClaseHija hereda de ClasePadre. Cuando creamos una instancia de ClaseHija, 
+# primero llamamos al método __init__ de ClasePadre usando super().__init__(valor). Esto asegura 
+# que la inicialización de la clase padre se complete antes de ejecutar el código adicional en la clase hija.
