@@ -256,39 +256,54 @@ consultar = True
 # except y finally, y se ejecuta siempre que no ocurra ninguna excepción en el código
 # definido en try o en except.
 
-class Error(Exception):
-    pass
+# class Error(Exception):
+#     pass
 
-class EdadError(Error):
-    def __init__(self, mensaje, edad):
+# class EdadError(Error):
+#     def __init__(self, mensaje, edad):
+#         self.mensaje = mensaje
+#         self.edad = edad
+
+# intentos = 0
+
+# while intentos <= 3:
+#     try:
+#         edad = int(input("Ingrese su edad:\n"))
+#         if edad < 0:
+#             raise EdadError("Debe ser un N° positivo.", edad)
+#         divisor = int(input("Ingrese número para dividir su edad:\n"))
+#         print(edad / divisor)
+#     except ValueError:
+#         print("Debe ingresar un número")
+#     except ZeroDivisionError:
+#         print("El N° por el cual desea dividir no puede ser cero")
+#     except EdadError as e:
+#         print(f"La edad '{e.edad}' no es válida. {e.mensaje}")
+#     except Exception as e:
+#         print(f"ERROR: {e}")
+#     finally:
+#         intentos +=1 # Se ejecuta siempre
+# print(f'Los intentos fueron: {intentos}')
+
+
+
+
+
+
+
+
+class MiErrorPersonalizado(Exception):
+    def __init__(self, mensaje):
+        super().__init__(mensaje)
         self.mensaje = mensaje
-        self.edad = edad
 
-intentos = 0
+# Ejemplo de uso
+def dividir(a, b):
+    if b == 0:
+        raise MiErrorPersonalizado("¡No puedes dividir entre cero!")
+    return a / b
 
-while intentos <= 3:
-    try:
-        edad = int(input("Ingrese su edad:\n"))
-        if edad < 0:
-            raise EdadError("Debe ser un N° positivo.", edad)
-        divisor = int(input("Ingrese número para dividir su edad:\n"))
-        print(edad / divisor)
-    except ValueError:
-        print("Debe ingresar un número")
-    except ZeroDivisionError:
-        print("El N° por el cual desea dividir no puede ser cero")
-    except EdadError as e:
-        print(f"La edad '{e.edad}' no es válida. {e.mensaje}")
-    except Exception as e:
-        print(f"ERROR: {e}")
-    finally:
-        intentos +=1 # Se ejecuta siempre
-print(f'Los intentos fueron: {intentos}')
-
-
-
-
-
-
-
-
+try:
+    resultado = dividir(10, 0)
+except MiErrorPersonalizado as e:
+    print(f"Error personalizado: {e.mensaje}")
