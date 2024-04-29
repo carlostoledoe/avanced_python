@@ -1,0 +1,3 @@
+{"nombre": "cebolla", "precio": 500}
+{"nombre": "apio", "precio": 300}
+{"nombre": "perejil", "precio": 1000}
